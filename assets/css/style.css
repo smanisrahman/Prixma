@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --br-color:#Ff4D29;
+    --dr-color:#092032;
+    /* --bo-color:rgba(239, 242, 245, 0.959); */
+    --border:rgba(0,0,0,0.08);
+    --shadow:0px 6px 30px rgba(0, 0, 0, 0.08);
+    --bo-color:#516171;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: var(--bo-color);
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5.h6{
+    color: var(--dr-color);
+    font-weight: 700;
+}
+
+a{
+    color: var(--dr-color);
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+a:hover{
+    color: var(--br-color);
+}
+img{
+    width: 100%;
+}
+
+.top-nav{
+    background-color: var(--br-color);
+    padding: 5px 0;
+}
+.top-nav p{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+.top-nav p i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.social-icon a{
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    display: inline-flex;
+    background-color: rgba(255, 255, 255,0.25);
+    border-radius: 100%;
+    align-items: center;
+    text-align: center;
+    display: inline-grid;
+}
+.social-icon a:hover{
+    background-color:#fff ;
+    color: var(--br-color);
+}
+.navbar{
+    box-shadow: var(--shadow);
+}
+.navbar-brand {
+    color: var(--dr-color);
+    font-size: 28px;
+    font-weight: 700;
+}
+.navbar-brand span{
+    color: var(--br-color);
+}
+.navbar-nav .nav-link{
+    font-weight: 500;
+    color: var(--dr-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+    color: var(--br-color);
+}
+.btn{
+    padding: 8px 26px;
+}
+.btn-contact{
+    border-color: var(--br-color);
+    background-color: var(--br-color);
+    color: #fff;
+    border-radius: 3px;
+}
+
+.btn-contact:focus{
+    background-color: var(--br-color);
+    outline-color:var(--br-color) ;
+    color: #fff;
+}
+.btn-contact:hover{
+    color: #fff;
+    background-color: #d33717;
+}
+/* Slider Start */
+
+.hero-slider{
+    position: relative;
+}
+.hero-slider h6{
+    font-weight: 700;
+}
+
+.slide1 h1,
+.slide2 h1{
+    font-weight: 700;
+}
+
+.slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.slide1{
+    background:linear-gradient(rgba(7, 7, 7, 0.4),rgba(2, 2, 2, 0.2)),url(../img/bg-ban-2.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide2{
+    background:linear-gradient(rgba(7, 7, 7, 0.4),rgba(2, 2, 2, 0.2)),url(../img/bg-ban-1.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: block;
+    display: grid;
+    place-items: center;
+    color: #fff !important;
+    border-radius: 100px;
+    line-height: 0;
+    border-radius: 100px !important;
+    position: absolute;
+    top: 50%;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    transition: all 0.4s ease;
+    margin-top: -30px !important;
+}
+
+.owl-prev {
+    left: 0;
+}
+.owl-next {
+    right: 0;
+}
+
+.hero-slider .owl-prev:hover,
+.hero-slider .owl-next:hover {
+    background-color:var(--br-color) !important; 
+}
+
+.owl-dot.active span{
+    background-color: var(--br-color) !important;
+}
+
+/* Slider end */
+
+
+/* About section  start*/
+.about-bg{
+    padding: 80px 0;
+    background: #ffffff;
+
+}
+
+.info-box{
+    display: flex;
+    align-items: center;
+}
+.info-box h5{
+    font-weight: 700;
+}
+.info-box img{
+    width: 90px;
+}
+
+/* Milestone section */
+#milestone{
+    padding: 80px 0;
+    background: linear-gradient(rgba(255, 77, 41, 0.9),rgba(255, 77, 41, 0.85)), url(../img/bg-ban-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mile-stone{
+    
+}
+.mile-stone h1{
+    font-weight: 700;
+    color: #fff;
+}
+.mile-stone p{
+    color: #fff;
+}
+
+/* Services Section */
+.services-bg{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #f5f5f5;
+}
+.services-bg h6{
+    color: var(--br-color);
+}
+.services-bg p{
+    max-width: 500px;
+}
+.service{
+    padding: 32px;
+    background:#fff ;
+    box-shadow: var(--shadow);
+}
+.service h5{
+    font-weight: 700;
+    padding: 15px 0;
+}
+.service img{
+    width: 90px;
+}
+/* Service End */
+
+
+/* Portfolio start */
+.portfolio{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #F8F9FA;
+}
+.portfolio h6{
+ font-weight: 500;
+ color: var(--br-color);
+}
+
+.portfolio p{
+    max-width:500px ;
+}
+/* End */
+
+
+
+/* Portfolio start */
+.project{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.project h6{
+    font-weight: 500;
+    color: var(--dr-color);
+}
+.project h6::before {
+    content: "";
+    height: 2px;
+    width: 30px;
+    display: inline-block;
+    background-color:#Ff4D29;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.project>.overlay {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.0) 0%, var(--dr-color)100%);
+}
+.project .content {
+    position: absolute;
+    left: 10%;
+    bottom: 10%
+}
+.project h2,
+.project h6 {
+    color: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background:var(--br-color);
+}
+/* Portfolio End */
+
+/* Team section start */
+.team{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #fff;
+}
+
+.team p{
+    max-width: 500px;
+}
+
+.team-member .img{
+    position: relative;
+    overflow: hidden;
+}
+.team-member .overlay{
+    position: absolute;
+    left: 0;
+    top: -10%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 77, 41, 0.89);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.team-member .social-icon{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member:hover .overlay{
+    opacity: 1;
+    top: 0;
+}
+
+.team-member:hover .social-icon{
+    opacity: 1;
+    top: 50%;
+}
+.team-member .content h5{
+    margin-top: 18px;
+}
