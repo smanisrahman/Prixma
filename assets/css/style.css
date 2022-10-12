@@ -17,7 +17,6 @@
 
 body{
     font-family: 'Barlow', sans-serif;
-    background-color: var(--bo-color);
     line-height: 1.7;
 }
 
@@ -109,9 +108,9 @@ img{
 }
 /* Slider Start */
 
-.hero-slider{
+/* .hero-slider{
     position: relative;
-}
+} */
 .hero-slider h6{
     font-weight: 700;
 }
@@ -129,19 +128,19 @@ img{
     position: relative;
 }
 .slide1{
-    background:linear-gradient(rgba(7, 7, 7, 0.4),rgba(2, 2, 2, 0.2)),url(../img/bg-ban-2.jpg) ;
+    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/bg-ban-2.jpg) ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .slide2{
-    background:linear-gradient(rgba(7, 7, 7, 0.4),rgba(2, 2, 2, 0.2)),url(../img/bg-ban-1.jpg) ;
+    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/bg-ban-1.jpg) ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.owl-theme .owl-nav [class*=owl-]{
+.hero-slider .owl-prev,
+.hero-slider .owl-next{
     background-color: rgba(255, 255, 255, 0.3) !important;
     width: 60px !important;
     height: 60px !important;
@@ -159,7 +158,6 @@ img{
     transition: all 0.4s ease;
     margin-top: -30px !important;
 }
-
 .owl-prev {
     left: 0;
 }
@@ -310,8 +308,13 @@ img{
     padding-bottom: 80px;
     background: #fff;
 }
+.team h6,
+.blog-bg h6{
+    color: var(--br-color);
+}
 
-.team p{
+.team p,
+.blog-bg p{
     max-width: 500px;
 }
 
@@ -349,4 +352,131 @@ img{
 }
 .team-member .content h5{
     margin-top: 18px;
+}
+/* End */
+
+
+
+/* Review Section Start */
+#reviews{
+    background: linear-gradient(rgb(8, 32, 50, 0.95),rgb(8, 32, 50, 0.95)),url(../img/bg-ban-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.review-person{
+    position: relative;
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+    z-index: 2;
+}
+.person .bxs-quote-alt-left {
+    font-size: 60px;
+    position: absolute;
+    opacity: 0.1;
+    left: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff
+}
+.person img{
+    width: 80px !important;
+    height: 80px;
+    border-radius: 100%;
+    margin: auto;
+}
+.person h5{
+    color: #fff;
+    margin-top: 20px;
+}
+.person small{
+    color: var(--br-color);
+}
+.person h3 {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.person .stars{
+    color: var(--br-color) !important;
+}
+/* End */
+
+/* Blog Section Start */
+.blog-bg{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.blog-post{
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.blog-post .content{
+    padding: 32px;
+}
+.blog-post h5{
+    margin: 12px 0px;
+    font-weight: 700;
+}
+.blog-post a{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: var(--br-color);
+    color: #fff;
+    padding: 2px 12px;
+    border-radius: 100px;
+    text-decoration:none ;
+}
+
+.blog-post small{
+    text-decoration: underline;
+    color: var(--br-color);
+    text-transform: uppercase;
+}
+/* Blog End */
+
+/* footer Section Start */
+footer{
+    background: linear-gradient(0deg,rgb(8,32,50,0.90),rgb(8,32,50,0.90)), url(../img/bg-ban-1.jpg),#082032;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer .footer-top{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+footer .footer-bottom{
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+footer .navbar-brand{
+    color: #fff;
+    margin: 10px 0;
+}
+footer .navbar-brand:hover{
+    color: #Fff;
+}
+footer p{
+    color: #adb3b9;
+}
+
+.footer-top .social-icon a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
