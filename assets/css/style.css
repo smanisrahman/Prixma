@@ -460,14 +460,14 @@ footer .footer-top{
 }
 footer .footer-bottom{
     padding: 20px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 footer .navbar-brand{
     color: #fff;
     margin: 10px 0;
 }
 footer .navbar-brand:hover{
-    color: #Fff;
+    color: #fff;
 }
 footer p{
     color: #adb3b9;
@@ -479,4 +479,29 @@ footer p{
     font-size: 20px;
     margin-left: 4px;
     margin-right: 4px;
+}
+
+/* .cal-img{
+    background-image: url(../img/c2.jpg);
+    min-height: 350px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+input.form-control {
+    border-color: transparent;
+    height: 44px;
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.04);;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color:var(--br-color);
 }
